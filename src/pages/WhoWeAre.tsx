@@ -1,7 +1,7 @@
 import WhoWeAreSection from "@/components/WhoWeAreSection";
 
 const WhoWeAre = () => (
-  <div className="pt-20">
+  <div id="who-we-are">
     <WhoWeAreSection />
   </div>
 );

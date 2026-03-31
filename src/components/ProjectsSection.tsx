@@ -78,13 +78,13 @@ export const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="py-32 noise-bg relative">
+    <section className="py-16 md:py-24 noise-bg relative">
       <div className="container mx-auto px-6 relative z-10">
         <motion.h2
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="font-display text-5xl md:text-7xl text-foreground mb-4"
+          className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-4"
         >
           PROJECTS
         </motion.h2>
@@ -119,7 +119,7 @@ const ProjectsSection = () => {
                   <p className="font-mono text-[10px] text-muted-foreground uppercase tracking-[0.3em] mb-2">
                     {project.category} — {project.year}
                   </p>
-                  <h3 className="font-display text-3xl md:text-4xl text-foreground group-hover:text-primary transition-colors duration-300">
+                  <h3 className="font-display text-2xl md:text-3xl text-foreground group-hover:text-primary transition-colors duration-300">
                     {project.title}
                   </h3>
                 </div>

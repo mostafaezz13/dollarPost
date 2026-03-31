@@ -1,7 +1,7 @@
 import ContactSection from "@/components/ContactSection";
 
 const Contact = () => (
-  <div className="pt-20">
+  <div id="contact">
     <ContactSection />
   </div>
 );

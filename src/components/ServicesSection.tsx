@@ -12,13 +12,13 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="py-32 noise-bg relative">
+    <section className="py-8 md:py-16 noise-bg relative">
       <div className="container mx-auto px-6 relative z-10">
         <motion.h2
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="font-display text-5xl md:text-7xl text-foreground mb-4"
+          className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-4"
         >
           SERVICES
         </motion.h2>

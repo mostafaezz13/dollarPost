@@ -14,7 +14,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
-          <h1 className="font-display text-6xl sm:text-8xl md:text-9xl tracking-wider leading-none text-foreground">
+          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-wider leading-none text-foreground">
             DOLLAR
             <br />
             <span className="text-primary">CREATIVE LAB</span>
@@ -27,10 +27,22 @@ const HeroSection = () => {
           transition={{ delay: 0.8, duration: 1 }}
           className="mt-8 font-mono text-xs md:text-sm text-muted-foreground max-w-xl mx-auto tracking-[0.3em] uppercase"
         >
-          Post Production · VideoEditing · Color Grading
+          Post-Production · Video-Editing · Color-Grading
         </motion.p>
 
-        <Link to="/projects">
+        <a href="#projects" onClick={(e) => {
+          e.preventDefault();
+          const element = document.getElementById("projects");
+          if (element) {
+            const navbarHeight = 80;
+            const offsetPosition = element.getBoundingClientRect().top + window.scrollY - navbarHeight;
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: "smooth"
+            });
+            window.history.pushState(null, "", "/#projects");
+          }
+        }}>
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -39,7 +51,7 @@ const HeroSection = () => {
           >
             View Our Work
           </motion.span>
-        </Link>
+        </a>
       </div>
     </section>
   );

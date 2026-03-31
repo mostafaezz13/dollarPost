@@ -1,7 +1,7 @@
 import ProjectsSection from "@/components/ProjectsSection";
 
 const Projects = () => (
-  <div className="pt-20">
+  <div id="projects">
     <ProjectsSection />
   </div>
 );

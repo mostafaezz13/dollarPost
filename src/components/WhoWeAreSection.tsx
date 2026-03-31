@@ -9,13 +9,13 @@ const aspects = [
 
 const WhoWeAreSection = () => {
   return (
-    <section className="py-32 noise-bg relative">
+    <section className="py-8t md:py-16 noise-bg relative">
       <div className="container mx-auto px-6 relative z-10">
         <motion.h2
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="font-display text-5xl md:text-7xl text-foreground mb-4 uppercase"
+          className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-4 uppercase"
         >
           Who We Are
         </motion.h2>
@@ -34,7 +34,7 @@ const WhoWeAreSection = () => {
               <div className="font-mono text-[10px] text-muted-foreground mb-8">
                 [{aspect.number}]
               </div>
-              <h3 className="font-display text-3xl text-foreground mb-4">{aspect.title}</h3>
+              <h3 className="font-display text-2xl text-foreground mb-4">{aspect.title}</h3>
               <p className="font-body text-base text-muted-foreground leading-relaxed mt-auto">
                 {aspect.desc}
               </p>
